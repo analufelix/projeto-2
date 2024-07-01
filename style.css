@@ -1,148 +1,124 @@
-a:root {
-    --branco-principal: hsl(208, 100%, 97%);
-    --cinza-secundario:#77889955
-    --botao-azul: 
-    --cor-de-fundo:#111157;
-    --fonte-principal: 'Inter';
-    --botao-azul-efeito:#00008B
-}
+/* estilo.css */
 
 body {
-   background-color: var(--cor-de-fundo);
-   color: var var(--branco-principal);
-   font-family: var (var(--fonte-principal));
-   font-size: 16px;
-   font-weight: 400;
-}
-
-* {
+    font-family: Arial, sans-serif;
+    background-color: #213774;
     margin: 0;
     padding: 0;
 }
 
-.principal {
-   background-image: url("background.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   align-items: center;
-   text-align: center;
-}
-
 .container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #336399;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container__botao {
-    background-color: var(--botao-azul);
-    border-radius: 5px;
-    padding: 1em;
-    color: var(--branco-principal);
-    display: block;
-    text-decoration: none;
-    margin-bottom: 1em;
-}
-
-.botao_secundario {
-    background-color: transparent;
-    border: 2px solid var(--branco-principal);
-}
-
-.container__aviso {
-    font-size: 12px;
-    color: var(--cinza-secundario);
-}
-
-.container__titulo {
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.container__imagem {
-    margin: 1em 0 2em 0;
-}
-
-.container__caixa {
-    margin: 0 6em;
-}
-
-.secundario__imagem {
-    width 80%
-}
-
-.secundario {
-    align-items: center;
-    margin: 0 10em;
-}
-
-.descricao__titulo {
-    font-weight: 700;
-    font-size: 48px;
-    color; var(--branco-principal);
-    margin-bottom: 0.1em;
-}
-
-.descricao__texto{
-    color: var(--cinza-secundario);
-}
-
-.secundario__botao {
-    display: inline-block;
-    margin-top: 1em;
-}
-
-.container__descricao {
-    padding: 2em;
-}
-
-.dispositivos__lista {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 5em 0;
-}
-
-.dispositivos__lista {
+header {
     text-align: center;
+    padding: 20px 0;
 }
 
-.descricao__titulo {
-    font-size: 48px;
-    color: var(--branco-principal);
+header h1 {
+    margin: 0;
+    color: #ffffff;
 }
 
-.lista__item {
-    font-size: 32px;
-    color: var(--branco-principal);
+header p {
+    color: #ffffff;
 }
 
-.rodape {
-    text-align: center
-    margin 5em 3em;
+.combo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
 }
 
-.rodape__lista {
-    display:flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1em;
+.combo img {
+    width: 200px;
 }
 
-.lista__link a{
-    text-decoration: none;
-    color: var(--branco-principal);
-    margin-left: 1em;
+.combo-details {
+    flex-grow: 1;
+    padding: 0 20px;
 }
 
-.rodape__texto {
-    margin: 1em 0;
-    color: var(--cinza-secundario);
-    font-size: 14px;
+.combo-details h2 {
+    color: #ffffff;
 }
 
-.lista__link a:hover {
-    color: var(--botao-azul);
+.combo-details p {
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-.lista__link a:active
+.benefits, .pricing, .devices, .signup {
+    margin: 20px 0;
+}
+
+.benefits h2, .pricing h2, .devices h2, .signup h2 {
+    color: #ffffff;
+}
+
+.benefits ul, .devices ul, .signup ol {
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.benefits ul li, .devices ul li, .signup ol li {
+    margin: 5px 0;
+}
+
+.pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+}
+
+.pricing table, th, td {
+    border: 1px solid #ddd;
+}
+
+.pricing th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.pricing th {
+    background-color: #f4f4f4;
+}
+
+.device-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.device-images img {
+    width: 100px;
+    margin: 5px;
+}
+
+.subscribe {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.subscribe button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #d40813;
+}
